@@ -9,6 +9,12 @@ h3 {
     font-weight: bold;
 }
 
+h4 {
+    margin: 0 0 5rem 1rem 0;
+    position: relative;
+    left: 30rem;
+}
+
 .topofheader {
     display: flex;
     font-size: 1rem;
@@ -22,4 +28,20 @@ h3 {
 
 .instructions {
     margin: 6rem 0 4rem 0;
+}
+
+.startbtn {
+    background-color: white;
+}
+
+.anschoices {
+    position: relative;
+    left: 30rem;
+}
+
+.ans1, .ans2, .ans3, .ans4 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 1.5rem;
 }
