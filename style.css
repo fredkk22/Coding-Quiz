@@ -1,0 +1,25 @@
+* {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h3 {
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.topofheader {
+    display: flex;
+    font-size: 1rem;
+    justify-content: space-between;
+    margin: 0.75rem;
+}
+
+.instructions, .start {
+    text-align: center;
+}
+
+.instructions {
+    margin: 6rem 0 4rem 0;
+}
