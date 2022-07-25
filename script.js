@@ -1,7 +1,7 @@
+var timer = document.querySelector("h1");
 var title = document.querySelector("h2");
 var question = document.querySelector("h3");
 var linkScores = document.querySelector(".link");
-var timer = document.querySelector("h1");
 var instructions1 = document.querySelector(".instructions1");
 var instructions2 = document.querySelector(".instructions2");
 var instructions3 = document.querySelector(".instructions3");
@@ -108,3 +108,8 @@ ansChoices.addEventListener("click", function (event) {
         }
     }
 })
+
+// High Scores Page
+var highScoresTitle = document.querySelector(".highscorestitle");
+
+highScoresTitle.textContent = "High Scores"
