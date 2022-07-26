@@ -113,16 +113,50 @@ ansChoices.addEventListener("click", function (event) {
     }
 })
 
-function saveLastPlayer() {
+function saveFirstPlayer() {
     var player = playerInitials.value;
+    var highScores = [];
+    var saveScores = [];
 
-    localStorage.setItem("Player", JSON.stringify(player));
-    window.location.href = "index.html";
+    if (player === "") {
+        return;
+    } else {
+        highScores.push(player);
+        localStorage.setItem("Player", JSON.stringify(highScores));
+        saveScores.push(timeLeft);
+        localStorage.setItem("High Scores", JSON.stringify(saveScores));
+        window.location.href = "index.html";
+    }
 }
 
-submitbtn.addEventListener("click", function () {
+function saveOtherPlayers() {
+    var player = playerInitials.value;
+    saveScores = JSON.parse(localStorage.getItem("High Scores"));
+    highScores = JSON.parse(localStorage.getItem("Player"));
 
-    saveLastPlayer();
+    if (player === "") {
+        return;
+    } else if (timeLeft >= saveScores[0] && i === 5) {
+        highScores.unshift(player);
+        localStorage.setItem("Player", JSON.stringify(highScores));
+        saveScores.unshift(timeLeft);
+        localStorage.setItem("High Scores", JSON.stringify(saveScores));
+        window.location.href = "index.html";
+    } else {
+        highScores.push(player);
+        localStorage.setItem("Player", JSON.stringify(highScores));
+        saveScores.push(timeLeft);
+        localStorage.setItem("High Scores", JSON.stringify(saveScores));
+        window.location.href = "index.html";
+    }
+}
+
+submitbtn.addEventListener("click", function (event) {
+    event.preventDefault();
+
+    if (!localStorage.getItem("Player")) {
+        saveFirstPlayer()
+    } else {
+        saveOtherPlayers();
+    }
 })
-
-

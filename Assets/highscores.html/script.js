@@ -1,10 +1,12 @@
-var playerList = document.querySelector(".playerlist");
-var highScoresTitle = document.querySelector(".highscore");
-var highScoresList = [];
-highScoresTitle.textContent = "High Scores List";
-
 function renderPlayers() {
-    storedPlayers = JSON.parse(localStorage.getItem("Player"));
+    var playerList = document.querySelector(".playerlist");
+    var highScoresTitle = document.querySelector(".highscore");
+    var storedPlayers = JSON.parse(localStorage.getItem("Player"));
+    var highScoresList = [];
+
+    highScoresTitle.textContent = "High Scores List";
+
+    highScoresList = highScoresList.concat(storedPlayers);
 
     for (var i = 0; i < highScoresList.length; i++) {
 
@@ -16,21 +18,6 @@ function renderPlayers() {
 
         playerList.appendChild(li);
     }
-
 }
 
-function display() {
-
-    var storedPlayers = JSON.parse(localStorage.getItem("Player"));
-
-    highScoresList = highScoresList + storedPlayers;
-
-    
-
-
-    renderPlayers()
-}
-
-display();
-
-localStorage.getItem("Player");
+renderPlayers();
