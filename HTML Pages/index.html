@@ -6,15 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Coding Quiz</title>
-  <link rel="stylesheet" href="./reset.css" />
-  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="../Assets/index.html/reset.css" />
+  <link rel="stylesheet" href="../Assets/index.html/style.css" />
 </head>
 
 <body>
 
   <header>
     <div class="topofheader">
-        <a class="link" href="./HTML Pages/High Scores Page/highscores.html" target="blank" rel="Link to High Scores" ></a>
+        <a class="link" href="./highscores.html" target="blank" rel="Link to High Scores" ></a>
 
       <h1 class="timer"></h1>
     </div>
@@ -44,21 +44,24 @@
           <button class="ans3"></button>
 
           <button class="ans4"></button>
+
+          <div class="resultalert"></div>
         </div>
-        <p class="resultalert"></p>
       </section>
 
-      <section class="endofgame">
-        <form action="./HTML Pages/High Scores Page/highscores.html" target="blank">
+      <section class="endofgame" >
+        <form  id="submitbtn" action="./highscores.html" target="blank">
           <label class="endform" for="initials"></label>
           <input type="text" id="typeinitials" name="playerinitials">
-          <input type="submit" value="Submit">
+          <button class="submit"></button>
         </form>
+        <div class="numansquestions"></div>
+        <div class="finaltime"></div>
       </section>
 
   </main>
 
-  <script src="./script.js"></script>
+  <script src="../Assets/index.html/script.js"></script>
 
 </body>
 

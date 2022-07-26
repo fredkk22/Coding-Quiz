@@ -41,6 +41,7 @@ h3 {
 
 .anschoices {
     position: relative;
+    position: absolute;
     left: 30rem;
 }
 
@@ -53,18 +54,21 @@ h3 {
 
 .endofgame {
     display: flex;
-    justify-content: center;
-    margin-top: 10rem;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 15rem;
+}
+
+.numansquestions, .finaltime {
+    margin: 4rem 0 1rem 0;
 }
 
 .resultalert {
-    margin-top: 1rem;
-    border-top: 5px solid gray;
+    margin: 1rem 1.5rem 0 1rem;
+    border-top: 2px solid darkgray;
     padding-top: 1.5rem;
-    text-align: center;
 }
 
+
+
 /* HIGH SCORES PAGE */
-.highscorestitle {
-    
-}
