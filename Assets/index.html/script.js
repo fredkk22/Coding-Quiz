@@ -66,6 +66,7 @@ function beginTimer() {
 
         if (timeLeft < 1) {
             clearInterval(timeInterval);
+            timeLeft = 0;
             timer.textContent = "Time ran out!";
             numberAns.textContent = "Questions Answered: " + i;
             finalTime.textContent = "Time Left: " + timeLeft + " seconds";
@@ -117,6 +118,7 @@ function saveFirstPlayer() {
     var player = playerInitials.value;
     var highScores = [];
     var saveScores = [];
+    var saveAnswered = [];
 
     if (player === "") {
         return;
@@ -125,28 +127,35 @@ function saveFirstPlayer() {
         localStorage.setItem("Player", JSON.stringify(highScores));
         saveScores.push(timeLeft);
         localStorage.setItem("High Scores", JSON.stringify(saveScores));
+        saveAnswered.push(i);
+        localStorage.setItem("Questions Answered", JSON.stringify(saveAnswered));
         window.location.href = "index.html";
-    }
+    }  
 }
 
 function saveOtherPlayers() {
     var player = playerInitials.value;
-    saveScores = JSON.parse(localStorage.getItem("High Scores"));
     highScores = JSON.parse(localStorage.getItem("Player"));
+    saveScores = JSON.parse(localStorage.getItem("High Scores"));
+    saveAnswered = JSON.parse(localStorage.getItem("Questions Answered"));
 
     if (player === "") {
         return;
-    } else if (timeLeft >= saveScores[0] && i === 5) {
+    } else if (timeLeft >= saveScores[0]) {
         highScores.unshift(player);
         localStorage.setItem("Player", JSON.stringify(highScores));
         saveScores.unshift(timeLeft);
         localStorage.setItem("High Scores", JSON.stringify(saveScores));
+        saveAnswered.unshift(i);
+        localStorage.setItem("Questions Answered", JSON.stringify(saveAnswered));
         window.location.href = "index.html";
     } else {
         highScores.push(player);
         localStorage.setItem("Player", JSON.stringify(highScores));
         saveScores.push(timeLeft);
         localStorage.setItem("High Scores", JSON.stringify(saveScores));
+        saveAnswered.push(i);
+        localStorage.setItem("Questions Answered", JSON.stringify(saveAnswered));
         window.location.href = "index.html";
     }
 }
