@@ -1,0 +1,30 @@
+:root {
+    --red: red;
+    --blue: blue;
+}
+
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0 auto;
+    padding: 0;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 4rem;
+    text-align: center;
+    color: var(--red);
+}
+
+ol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--red);
+}
+
+li {
+    padding: 1rem 0.5rem;
+}
