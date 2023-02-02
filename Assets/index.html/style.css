@@ -10,7 +10,7 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-/* Element Selectorss */
+/* Element Selectors */
 h2 {
     margin-top: 5rem;
     text-align: center;
@@ -51,7 +51,7 @@ h3 {
 
 .startbtn {
     font-size: 1.5rem;
-    border-radius: 15px;
+    border-radius: 30px;
     padding: 0.5rem 0.75rem;
     color: var(--white);
     background-color: var(--red);
@@ -92,9 +92,8 @@ h3 {
     margin-top: 15rem;
 }
 
-.numansquestions,
 .finaltime {
-    margin: 4rem 0 1rem 0;
+    margin: 3rem;
 }
 
 .quizbody {

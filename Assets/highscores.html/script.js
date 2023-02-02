@@ -1,5 +1,5 @@
 // Print page title on the screen
-var highScoresTitle = document.querySelector("h1");
+const highScoresTitle = document.querySelector("h1");
 highScoresTitle.textContent = "High Scores List";
 
 // Function to render player initials, time remaining (in order from most to least), and number of questions answered (in the same order)
