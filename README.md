@@ -1,6 +1,8 @@
 # Coding-Quiz
 
 ## Table of Contents
+- [Coding-Quiz](#coding-quiz)
+  - [Table of Contents](#table-of-contents)
   - [Description](#description)
   - [Screenshots](#screenshots)
   - [Credits](#credits)
@@ -18,11 +20,11 @@ I was able to learn everything I listed above and have become much more comforta
 
 ## Screenshots
 
-![Screenshot 1](./Assets/images/Coding%20Quiz%20SS1.PNG)
-![Screenshot 2](./Assets/images/Coding%20Quiz%20SS2.PNG)
-![Screenshot 3](./Assets/images/Coding%20Quiz%20SS3.PNG)
-![Screenshot 4](./Assets/images/Coding%20Quiz%20SS4.PNG)
-![Screenshot 5](./Assets/images/Coding%20Quiz%20SS5.PNG)
+![Screenshot 1](./main/assets/images/Coding%20Quiz%20SS1.PNG)
+![Screenshot 2](./main/assets/images/Coding%20Quiz%20SS2.PNG)
+![Screenshot 3](./main/assets/images/Coding%20Quiz%20SS3.PNG)
+![Screenshot 4](./main/assets/images/Coding%20Quiz%20SS4.PNG)
+![Screenshot 5](./main/assets/images/Coding%20Quiz%20SS5.PNG)
 
 ## Credits
 
